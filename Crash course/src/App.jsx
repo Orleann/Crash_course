@@ -1,14 +1,18 @@
-const App = () => {
+const Hello = () => {
   const now = new Date()
-  const a = 10
-  const b = 20
-  console.log(now, a + b)
+  console.log(now)
   return (
     <div>
-      <p>Helo world, today is {now.toDateString()}</p>
-      <p>
-        {a} + {b} = {a + b}
-      </p>
+      <h1>Hello World</h1>
+      <p>Today is {now.toDateString()}</p>
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <div>
+      <Hello />
     </div>
   )
 }
